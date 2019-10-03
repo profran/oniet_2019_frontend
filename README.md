@@ -1,8 +1,8 @@
-##PARA INSTALAR
+## PARA INSTALAR
 
 ### `npm install`
 
-##PARA CORRER
+## PARA CORRER
 
 ### `npm start`
 
