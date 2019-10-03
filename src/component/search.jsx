@@ -26,7 +26,7 @@ export default class search extends Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    fetch(`http://192.168.43.104:3002/data/?userId=${this.state.userId}`, {
+    fetch(`http://localhost:3002/data/?userId=${this.state.userId}`, {
       method: 'GET',
     }).then(response => response.json()).then(response => this.setState({
       data: response
@@ -39,7 +39,7 @@ export default class search extends Component {
       dataQuery: []
     })
 
-    fetch(`http://192.168.43.104:3002/data/cruces/?userId=${this.state.userId}&${this.state.option}=${this.state.query}`, {
+    fetch(`http://localhost:3002/data/cruces/?userId=${this.state.userId}&${this.state.option}=${this.state.query}`, {
       method: 'GET',
     }).then(response => response.json()).then(response => this.setState({
       dataQuery: response
