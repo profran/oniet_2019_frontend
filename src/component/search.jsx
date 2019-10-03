@@ -132,10 +132,10 @@ export default class search extends Component {
                   <MenuItem value={'ip'}>IP</MenuItem>
                   <MenuItem value={'device_id'}>Device</MenuItem>
                 </Select>
-                <Button variant="contained" type='submit'>
-                  Buscar cruce
-            </Button>
               </Grid>
+              <Button variant="contained" type='submit'>
+                Buscar cruce
+            </Button>
             </Grid>
           </form >
           <TablaData data={this.state.dataQuery} />
